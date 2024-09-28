@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
+import Footer from "../components/Footer";
 import ErrorBoundry from "../components/ErrorBoundry";
 import "./App.css";
 
@@ -37,6 +38,7 @@ class App extends Component {
         <Scroll>
           <ErrorBoundry>{<CardList robots={filterRobots} />} </ErrorBoundry>
         </Scroll>
+        <Footer />
       </div>
     );
   }
